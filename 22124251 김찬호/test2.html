@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김찬호의 포트폴리오</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+        }
+        h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+        .intro-section {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #007BFF;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .intro-text {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>김찬호의 포트폴리오</h1>
+        <p>Report 2장 학번 : 22124251</p>
+    </header>
+
+    <hr>
+
+    <section>
+        <h2>소개</h2>
+        <div class="intro-section">
+            <img src="img/images.jpg" alt="김찬호 프로필 사진" class="profile-img">
+            <p class="intro-text">
+                저는 소프트웨어 개발을 공부하는 컴퓨터공학과 <b>김찬호</b>입니다.<br>
+                끊임없이 배우고 성장하며, 개발하는데 열정을 가지고 있습니다.
+            </p>
+        </div>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>현재 진행 중인 프로젝트</h2>
+        <ul>
+            <li><b>DACE CREW</b> Authorship분야 참여 중 </li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>좋아하는 노래</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Wa5B22KAkEk?si=1mrmQzB_89JF114C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>개발 경험</h2>
+        <table border="1" cellpadding="10" cellspacing="0" width="100%">
+            <tr>
+                <th bgcolor="#e0e0e0">프로젝트</th>
+                <th bgcolor="#e0e0e0">설명</th>
+            </tr>
+            <tr>
+                <td>1/10 자율주행</td> 
+                <td>1/10 크기 자율주행 장려상</td>
+            </tr>
+            <tr>
+                <td>여행 chatBot 개발</td>
+                <td>Rasa를 이용한 챗봇 개발 경험</td>
+            </tr>
+            <tr>
+                <td>DU-도전학기</td>
+                <td>React를 이용한 #story (블로그-쇼핑몰)웹 페이지 개발 + nodejs를 이용한 서버개발 + sqlite를 이용한 데이터베이스 구축</td>
+            </tr>
+        </table>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>연락하기</h2>
+        <p>Email: <u>ssingi@daegu.ac.kr</u></p>
+        <p>
+            <b>문의 사항:</b>
+            <br>
+            <form action="mailto:ssingi@daegu.ac.kr" method="post" enctype="text/plain">
+                이름: <input type="text" name="name" required><br>
+                이메일: <input type="email" name="email" required><br>
+                메시지: <br>
+                <textarea name="message" rows="5" cols="40" required></textarea><br>
+                <input type="submit" value="전송">
+            </form>
+        </p>
+    </section>
+
+</body>
+</html>
