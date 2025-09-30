@@ -3,21 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>가상 클래스 선택자 사용하기</title>
-    <style>
-        p:hover{background-color: #ff8;}
-        li::first-letter {color: red;}
-        li:nth-child(2) {color:green;}
-        li:last-child {color: blue;}
-    </style>
+    <title>숫자 입력하기</title>
 </head>
 <body>
-    <h2>바나나</h2>
-    <p><img src="../media_4/banana1.png" width="120"></p>
-    <ul>
-        <li>노란색의 아열대 과일</li>
-        <li>지방이 없어 체중 조절에 좋음</li>
-        <li>식이섬유가 풍부해 주식 대용으로 적당</li>
-    </ul>
+    <p>키우고 싶은 고양이는 몇 마리?</p>
+    고양이 <input type="number" min="0" max="10" step="1">마리 키우고 싶어요.
+    <br><br>
+    <p>고양이가 한 번에 먹는 사료량은 몇 g?</p>
+    <input type="range" id="food-amount" min="0" max="100" value="80" step="10">
+    <span id="range-value">80 g</span>
+
+     <script>
+        // HTML 요소 가져오기
+        const rangeInput = document.getElementById('food-amount');
+        const rangeValue = document.getElementById('range-value');
+
+        // 슬라이더 값이 변경될 때마다 실행
+        rangeInput.addEventListener('input', function() {
+            // span 태그의 텍스트를 슬라이더 값으로 업데이트
+            rangeValue.textContent = this.value + ' g';
+        });
+    </script>
+
 </body>
 </html>

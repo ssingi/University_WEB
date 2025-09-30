@@ -3,20 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>이미지를 배경으로 지정하기</title>
-    <style>
-        div{
-            background-image: url("../media_4/back.png");
-            height: 75px;
-        }
-    </style>
+    <title>파일 업로드와 색상 입력하기</title>
 </head>
 <body>
-    <div style="background-repeat: no-repeat;"><h3>repeat: no-repeat</h3></div>
-    <div style="background-repeat: repeat-x;"><h3>repeat: repeat-x</h3></div>
-    <div style="background-repeat: space;"><h3>repeat: space</h3></div>
-    <div style="background-repeat: round;"><h3>repeat: round</h3></div>
-    <div style="background-repeat: 50%;"><h3>repeat: 50%</h3></div>
-    <div style="background-repeat: contain;"><h3>repeat: contain</h3></div>
+    <label > 좋아하는 동물 이미지를 고르세요: <br>
+        <input type="file" id="profile" accept="image/png, image/jpeg">
+    </label><br><br>
+    <label>선택한 동물을 설명하는 문서 파일을 업로드하세요: <br>
+        <input type = "file" id="word" accept=".hwp, hwpx, application/msword">
+    </label><br><br>
+    <label>선택한 동물과 어울리는 색상을 : <input type="color" id="color"></label>
 </body>
 </html>

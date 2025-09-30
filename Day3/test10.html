@@ -3,19 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>em과 rem비교하기</title>
+    <title>다양한 버튼 만들기</title>
 </head>
-<body style="font-size: 16px;">
-    <div style="font-size: 1.4em;">1.4em: 16px * 1.4 = 22.4px
-        <div style="font-size: 1.4em;">1.4em: 22.4px * 1.4 = 31.36px
-            <div style="font-size: 1.4em;">1.4em: 31.36px * 1.4 = 43.9px</div>
-        </div>
-    </div>
-    <hr>
-    <div style="font-size: 1.4rem;">1.4rem: 16px * 1.4 = 22.4
-        <div style="font-size: 1.4rem;">1.4rem: 16px * 1.4 = 22.4
-             <div style="font-size: 1.4rem;">1.4rem: 16px * 1.4 = 22.4</div>
-        </div>
-    </div>
+<body>
+    <p>단순 버튼: <input type="button" value="in_tag">
+    <button type="button">bu_tag</button><br></p>
+    <p>제출 버튼: <input type="submit" value="in_submit">
+    <button type="submit">bu_submit</button><br></p>
+    <p>리셋 버튼: <input type="reset" value="in_reset">
+    <button type="reset">bu_reset</button><br></p>
+    <p>이미지 버튼: <input type="image" src="../img/play.png" height="50">
+    <button type="button"><img src="../img/play.png" height="50"></button></p>
 </body>
 </html>

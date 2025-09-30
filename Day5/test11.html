@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애니메이션과 @keyframes</title>
+    <style>
+        @keyframes down{
+            0%, 100% {transform: translateY(0px)};
+            50% {transform: translateY(400px);}
+        }
+    </style>
+</head>
+<body>
+    <img src="../media_4/apple.png" style="animation: down 3s;" width="100px">
+    <img src="../media_4/banana1.png" style="animation: down linear 3s 5;" width="100px">
+    <img src="../media_4/cake1.png" style="animation: down 3s infinite;" width="100px">
+    <img src="../media_4/donut.png" style="animation: down 3s infinite alternate;" width="100px">
+</body>
+</html>

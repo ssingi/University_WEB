@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>태그에 한정되는 style 속성 사용하기</title>
+    <title>프레임 이름 지정하기</title>
 </head>
 <body>
-    <h2>바나나</h2>
-    <p><img src="../media_4/banana1.png" width="120"></p>
-    <p>노란색의 아열대 과일</p>
-    <p style="color: blue;">지방이 없어 체중 조절에 좋음</p>
-    <p>식이섬유가 풍부해 주식 대용으로 적당</p>
+    <p>
+        <a href="https://mcdonalds.co.kr" target="upper_frame">맥도날드 홈페이지</a>
+        <a href="https://naver.com" target="middle_frame">네이버 홈페이지</a>
+        <a href="https://daegu.ac.kr/main" target="down_frame">네이버 홈페이지</a>
+    </p>
+    <iframe name="upper_frame" width="450" height="180" ></iframe> <br>
+    <iframe name="middle_frame" width="450" height="180" ></iframe> <br>
+    <iframe name="down_frame" width="450" height="180" ></iframe> <br>
 </body>
 </html>

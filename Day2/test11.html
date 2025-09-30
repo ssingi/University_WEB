@@ -2,54 +2,13 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
-    <title>날짜와 시간입력하기</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-    <h2>현재 시간으로 자동 설정</h2>
-
-    <p>
-        **월:** <input type="month" id="current-month">
-    </p>
-    <p>
-        **주:** <input type="week" id="current-week">
-    </p>
-    <p>
-        **날짜:** <input type="date" id="current-date">
-    </p>
-    <p>
-        **로컬 날짜 및 시간:** <input type="datetime-local" id="current-datetime">
-    </p>
-    <p>
-        **시간:** <input type="time" id="current-time" min="17:00:00" max="24:00:00">
-    </p>
-
-    <script>
-        // 현재 날짜와 시간 가져오기
-        const now = new Date();
-
-        // yyyy-MM 형식
-        const month = now.getFullYear() + '-' + String(now.getMonth() + 1).padStart(2, '0');
-        document.getElementById('current-month').value = month;
-
-        // yyyy-Wnn 형식
-        // 주의 계산은 복잡하므로, 가장 간단한 예시로 구현했습니다.
-        const year = now.getFullYear();
-        const startOfYear = new Date(year, 0, 1);
-        const weekNumber = Math.ceil(((now - startOfYear) / 86400000 + 1) / 7);
-        document.getElementById('current-week').value = year + '-W' + String(weekNumber).padStart(2, '0');
-
-        // yyyy-MM-dd 형식
-        const date = now.getFullYear() + '-' + String(now.getMonth() + 1).padStart(2, '0') + '-' + String(now.getDate()).padStart(2, '0');
-        document.getElementById('current-date').value = date;
-
-        // yyyy-MM-ddThh:mm 형식
-        const datetime = new Date(now.getTime() - (now.getTimezoneOffset() * 60000)).toISOString().slice(0, 16);
-        document.getElementById('current-datetime').value = datetime;
-
-        // hh:mm 형식
-        const time = String(now.getHours()).padStart(2, '0') + ':' + String(now.getMinutes()).padStart(2, '0');
-        document.getElementById('current-time').value = time;
-    </script>
+    <table border="1">
+        <tr> <td>프라이</td> <td>2000</td> <td>중</td> </tr>
+        <tr> <td>음료</td> <td>1500</td> <td></td> <td>중</td></tr>
+    </table>
 </body>
 </html>

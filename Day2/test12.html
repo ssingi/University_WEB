@@ -3,15 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>파일 업로드와 색상 입력하기</title>
+    <title>제목, 머리, 몸통, 바닥이 있는 테이블</title>
 </head>
 <body>
-    <label > 좋아하는 동물 이미지를 고르세요: <br>
-        <input type="file" id="profile" accept="image/png, image/jpeg">
-    </label><br><br>
-    <label>선택한 동물을 설명하는 문서 파일을 업로드하세요: <br>
-        <input type = "file" id="word" accept=".hwp, hwpx, application/msword">
-    </label><br><br>
-    <label>선택한 동물과 어울리는 색상을 : <input type="color" id="color"></label>
+    <table border="1">
+        <caption>버거 세트 가격</caption>
+        <thead>
+            <tr><th>종류</th><th>가격</th><th>용량</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>치즈버거</td> <td>4500</td> <td></td></tr>
+            <tr><td>프라이</td> <td>2000</td>중<td></td></tr>
+            <tr><td>음료</td> <td>1500</td>대<td></td></tr>
+        </tbody>
+        <tfoot>
+            <tr><th>가격</th><th>7000</th><th>할인</th></tr>
+        </tfoot>
+    </table>
 </body>
 </html>
