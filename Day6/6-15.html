@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수를 사용한 음식 주문하기</title>
+    <style>
+        b{
+            font-size: 80px;
+            font-weight: bold;
+            color: red; 
+            text-shadow: 2px 2px 4px #000;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function makeFood(num){
+            if(num >= 1 && num <= 3){
+                document.writeln("<img src='../img/대구대교직원식당메뉴.png'>");
+                return true;
+            }else return false;
+        }
+        const food = parseInt(prompt("교밥 = 1, 교밥 = 2, 교밥 = 3"));
+        const result = makeFood(food);
+        if(result)
+            document.writeln("<hr><b>음식은 학식당이지!</b>");
+        else
+            document.writeln("햄버거는 없습니다.");
+    </script>
+</body>
+</html>

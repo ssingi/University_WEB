@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>질문에 답하기</title>
+    <style>
+        /* 페이지 가운데 정렬 및 기본 스타일 */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: 'Malgun Gothic', sans-serif;
+        }
+        /* 결과 텍스트 스타일 */
+        #result-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="result-text"></h1>
+
+    <script>
+        // 1. 사용자에게 질문을 던지고, 답변을 'userAnswer' 변수에 저장합니다.
+        // prompt의 두 번째 인자는 입력창에 기본으로 표시될 텍스트입니다.
+        const userAnswer = prompt('밖으로 걸어나간다. "교직원 식당으로 가는 건가?", (네/아니오)');
+
+        // 2. 결과를 표시할 HTML 요소를 id로 찾아 'resultElement' 변수에 저장합니다.
+        const resultElement = document.getElementById('result-text');
+
+        // 3. 사용자가 입력한 답변(userAnswer)을 확인하고 조건에 맞는 텍스트를 출력합니다.
+        //    사용자가 '네', '예', 'ㅇ' 등으로 답하거나 그냥 확인을 누른 경우를 처리합니다.
+        //    userAnswer가 null이 아닌 경우 (취소 버튼을 누르지 않은 경우)
+        if (userAnswer !== null) {
+            // .textContent를 사용해 안전하게 텍스트를 넣습니다.
+            resultElement.textContent = `답변: "${userAnswer}" (역시.. 무조건 가야지! 😉)`;
+        } 
+        // 사용자가 '취소' 버튼을 누른 경우 (userAnswer가 null일 때)
+        else {
+            resultElement.textContent = '대답이 없네? 그래도 무조건 가는 거다! 😄';
+        }
+    </script>
+
+</body>
+</html>
